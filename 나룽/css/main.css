@@ -1,0 +1,102 @@
+/* #main{
+    display: none;
+} */
+
+
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#컨테이너{
+
+    background-image: url('/img/송비티아이 배경.png');
+    background-repeat: repeat;
+    background-size: 99.8%;
+    max-width: 100vmin;
+    min-height: 918px;
+   text-align: center;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   font-family: 'GangwonEduPowerExtraBoldA';
+ 
+}
+
+
+#main{
+    width: 75%;
+    margin: auto;
+    
+}
+
+img{
+    width: 100%;
+}
+
+.모여봐요{
+    width: 100%;
+    margin-top: 10px;
+   
+}
+
+.설명{
+    width:100%;
+    font-size: 2.5vmin;
+   
+    margin: auto;
+}
+
+.시작하기{
+ background-color: rgb(215,45,102);
+ font-family: 'GangwonEduPowerExtraBoldA';
+ color: white;
+ width: 95%;
+ border-radius: 20px;
+ padding: 10px;
+ border: none;
+ padding-top: 15px;
+ box-shadow: rgba(215,45,102,0.7) 0px 0px 9px 0.6px;
+ margin-top: 10px;
+ transition: padding-top 0.6s ,padding-bottom 0.6s;
+}
+
+.송박게임{
+
+    background-color: rgb(235,156,30);
+ font-family: 'GangwonEduPowerExtraBoldA';
+ color: white;
+ width: 95%;
+ border-radius: 20px;
+ padding: 10px;
+ border: none;
+ padding-top: 15px;
+ box-shadow: rgba(235,156,30,0.7) 0px 0px 9px 0.6px;
+ margin-top: 20px;
+ transition: padding-top 0.6s ,padding-bottom 0.6s;
+ 
+ 
+}
+
+.시작하기:hover,.송박게임:hover {
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+.오류접수{
+
+    margin-top: 20px;
+    font-size: 10px;
+    color: gray;
+}
+
+.출처표기{
+    margin-top: 150px;
+    font-size: 5px;
+    color: rgb(218, 218, 218);
+    margin-bottom: 0px;
+}
