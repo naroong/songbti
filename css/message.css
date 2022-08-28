@@ -1,0 +1,101 @@
+#메세지박스{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    animation: fadein 3s;
+  -moz-animation: fadein 3s; /* Firefox */
+  -webkit-animation: fadein 3s; /* Safari and Chrome */
+  -o-animation: fadein 3s; /* Opera */
+  
+}
+ 
+
+#편지내용{
+   display: none;
+}
+
+.프롤로그{
+    width: 80%;
+    margin: auto;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.안내문{
+    font-size: 1vmin;
+    color: gray;
+    margin-top: 200px;
+    margin-bottom: 0px;
+}
+
+.까리송{
+    width: 70px;
+    margin:auto;
+    margin-top: 50px;
+  
+}
+
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.편지 {
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    font-size: 80%;
+    font-family: KyoboHand;
+    background-color: rgba(51, 129, 188,0.3);
+    padding: 10px;
+    box-shadow:rgba(51, 129, 188, 0.5) 0px 0px 10px 0.7px;
+}
+
+.본론{
+    text-align: left;
+    padding-left: 10px;
+}
+.from{
+    text-align: right;
+    padding-right: 10px;
+}
+#눈송버튼{
+   padding-top: 20px;
+   font-size: 100%;
+   text-align: right;
+   cursor: pointer;
+}

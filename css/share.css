@@ -1,0 +1,16 @@
+.logo div {
+    display: inline-block;
+    margin-bottom:30px;
+}
+
+.logo .share {
+    display: inline-block;
+    width: 50px;
+    margin: 0.5rem;
+    margin-top:0px;
+}
+
+
+    .shares .share:hover {
+        cursor: pointer;
+    }

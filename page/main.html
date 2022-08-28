@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="kor">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no, maximum-scale=1.0,user-scalable=no"/>
+    <!-- Primary Meta Tags -->
+    <title>송BTI 검사하기</title>
+    <meta name="title" content="송BTI">
+    <meta name="description" content="눈송마을 속 나는 어떤 주민일까?">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="송BTI">
+    <meta property="og:url" content="https://songbti2.netlify.app/index.html">
+    <meta property="og:image" content="https://songbti2.netlify.app/img/cover.png">
+    <meta property="og:description" content="눈송마을 속 나는 어떤 주민일까?">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://songbti2.netlify.app/index.html">
+    <meta property="twitter:title" content="송BTI 검사하기">
+    <meta property="twitter:description" content="눈송마을 속 나는 어떤 주민일까?">
+    <meta property="twitter:image" content="https://songbti2.netlify.app/img/cover.png">
+    <title>송BTI</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/qna.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/loading.css">
+    <link rel="stylesheet" href="../css/result.css">
+    <link rel="stylesheet" href="../css/share.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        Kakao.init('2e6e409efe364dbca8c4cbcced34b4dc');
+        Kakao.isInitialized();
+    </script>
+</head>
+<body>
+
+    <div id="컨테이너" class="mx-auto" >
+        
+        <div id="제목" class="mx-auto">
+            <img src="../img/송비티아이 제목.png">
+
+            <!--메인페이지-->
+            <section id="main">
+                <div class="레이어드">
+                    <div class="눈송마을">
+                       <img class="모여봐요" src="../img/모여봐요.png">
+                    </div>
+                    <div class="설명">
+                        <p>
+                            눈송마을 속 내가 어떤 유형인지 알고싶다면?
+                            <br>
+                            ✌지/금/당/장/테/스/트/하/기&✌
+                        </p>
+                    </div>
+                    <div>
+                        <button class="시작하기"  onclick="js: begin()">
+                            테스트 시작하기
+                        </button>
+                        <br>
+                        <button class="송박게임" onclick="location.href='https://festival2022archiv.wixsite.com/my-site'">
+                            웹사이트 바로가기
+                        </button>
+                    </div>
+                    <div class="오류접수">
+                        <P>
+                        문의사항 및 오류접수
+                        <br>
+                        smwu2022festival@gmail.com
+                        </P>
+                        <p>
+                            본 사이트는 모바일에서만 지원 가능합니다.
+                        </p>
+                    <div class="출처표기">
+                        <p>
+                            본 사이트는 완도희망체, 강원교육튼튼체 
+                            <br>및 MICE고딕체를 사용하였습니다. 
+                        </p>
+                    </div>
+    
+                    </div>
+    
+                </div>
+
+            </section>
+            
+
+            <!--qna페이지-->
+            <article class="question">
+                <section id="qna">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: calc(100/9*1%)" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    
+                        </div>
+                    </div>
+                    <p id="title" class="questionone">
+                        Q1. 우연히 초대장을 연 당신은 <Br>
+                        순식간에 눈송마을로 빨려 들어간다.<br />
+                        <br>
+                        눈송마을에서 축제가 열리는 9월 6,7일 
+                        <br> 이틀 간 축제에 참가하게 된 당신! <br />
+                        이왕 갔는데 나는 축제를..
+                    </p>
+                    <input id="type" type="hidden" value="EI" />
+                    <br />
+                    <button id="A" class="mb-4"><span class="upA">당연히 다 가야지!</span> <br /> <span class="underA">2일 다 간다.</span></button>
+                    <br>
+                    <button id="B"><span class="upB">너무 힘들어!</span> <br /><span class="underB">하루만 간다</span></button>
+                </section>
+            </article>
+
+            <!--로딩페이지-->
+
+            <article class="loading">
+                <section class="mx-auto" id="loadinging">
+                    <div class="mx-auto">
+                        <p class="loading-p">
+                            좀만 기다리송...
+                        </p>
+                        <img src="../img/눈송마을 포스터.gif">
+                        <p class="문의사항">
+                            문의사항 및 오류접수<br> smwufestival2022@gmail.com
+                        </p>
+                    </div>
+                </section>
+    
+                
+    
+    
+            </article>
+
+
+
+            <!--결과페이지-->
+            <div class="result">
+                <div class="주민이라면">
+                    <p class="내가눈송마을주민이라면">
+                    나는 눈송마을의..
+                    </p>
+                    <p>
+                        <span id="song">한송이</span> <span id="글자">유형</span> 
+                    </p>
+                </div>
+
+                <div class="결과유형">
+
+                        <img src="../img/한송이.png" class="rounded-circle" id="img">
+
+                </div>
+
+                <div class="resultdiscription">
+                    <div class="유형설명">
+                        <h2> 
+                            <span class="typediscript">
+                                 유형 설명 
+                            </span> 
+                        </h2>
+                        <br>
+                        <p class="상세설명" id="상세설명">
+                            송이님은 혼자서도 축제를 완벽하게 즐길 수 있는 한송이 유형이에요. 
+                            <br>
+                            <br>바쁘게 축제를 즐기더라도 축제가 끝나면 꼭 자기만의 공간에서 자기만의 시간을 보내야 에너지 충전이 되는 성향이에요! 
+                            <br>
+                            <br>또한, 여러 명의 친구와 얕은 관계를 형성하는 것보다는 소수의 깊이있는 관계를 추구하곤 해요
+                        </p>
+                    </div>
+
+                    <div class="추천프로그램">
+
+                        <h2> 
+                            <span class="recommend">
+                                추천 프로그램 
+                            </span>
+                        </h2>
+                        <br>
+                        <p id="추천설명">
+                            혼자 즐기는 것도 좋지만 
+                            <br>이번 축제만큼은 새로운 사람들과 만날 수 있는 
+                            <br> <반상회>에 참여하는게 어떨까요? 
+                            <Br>혼자서 여러 굿즈를 만들 수 있는 
+                            <br> <눈송공방>도 추천합니다!
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="relation-box">
+
+                    <h3>  
+                        <span class="destiny">
+                             눈송메이트를 찾아봐 
+                        </span>
+                        
+                    </h3>
+
+                    <ul class="relationbox">
+
+                        <li>
+                            <p class="송이제목">
+                                짝꿍송이
+                            </p>
+                            <img id="짝궁송이" class="rounded-circle" src="../img/얼음송이.png">
+                            <p id="pt">
+                                짝꿍송이
+                            </p>
+                           
+                        </li>
+
+                        <li>
+                            <p class="송이제목">
+                                서먹송이
+                            </p>
+                            <img id="반대송이"  class="rounded-circle" src="../img/백만송이.png">
+                            
+                            <p id="npt">
+                                반대송이
+                            </p>
+                            
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+                <div class="이하다른설명">
+                    
+                    <p>
+                        <br>
+                        <br>
+                        ㅡ
+                        <br>	
+                        &#129392;
+                        <br>
+                        눈송마을이 궁금하다면?
+                    </p>
+
+                    <button class="눈송마을웹사이트" onclick="location.href='https://festival2022archiv.wixsite.com/my-site'">
+                        웹사이트 바로가기
+                    </button>
+                </div>
+
+                <div class="share">
+                    <p>
+                        ㅡ
+                        <br>
+                        &#129392;
+                        <br>
+                        친구에게 공유하기
+                    </p>
+                    <div class="logo">
+                        <div class="f">
+                            <a>
+                                <img id="shareFb" class="share f" src="../img/facebook.png">
+                            </a>
+                        </div>
+                        <div class="tw">
+                            <a>
+                                <img id="shareTw" class="share tw" src="../img/tweeter.png">
+                            </a>
+                        </div>
+                        <div class="k">
+                            <a id="kakao-link-btn">
+                                <img class="share k" src="../img/kakao.png" onclick="js:kakaoShare()">
+                            </a>
+                        </div>
+                        <div class="copylink">
+                            <a href="#" onclick="clip(); return false;">
+                                <img class="share l" src="../img/link.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="테스트다시하기">
+                    ㅡ
+                        <br>
+                        &#129392;
+                        <br>
+                    <button class="again" onClick="location.href='main.html'">
+                        
+                        테스트 다시하기 
+                    </button>
+                </div>
+
+                
+            </div>
+
+          
+
+    
+           
+           
+        </div>
+
+      <!--자바스크립트-->
+      <input type="hidden" id="EI" value="0" />
+        <input type="hidden" id="JP" value="0" />
+        <input type="hidden" id="TF" value="0" />
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script>
+            var num = 1;
+            var q = {
+                1: { "title": "Q2. 눈송마을에 도착하니 <br> 사람들이 무엇인가 보며 모여있다.", "type": "EI", "A": " <span class='upA'> 혹시 여기 무슨 일 있어요? </span>  <br>  <span class='underA'> 주변 사람들에게 물어본다 </span> ", "B": " <span class='upB'>  뭘까? </span>  <br> <span class='underB'>  일단 상황을 살피며 <br>궁금해 한다</span>" },
+                2: { "title": "Q3. 새벽 1시.. 평화로운 눈송마을에 <br> 빌런이 들이닥쳤다. <br> 55명의 송이를 데리고 사라진 빌런.. <br> 경찰관에게 나의 알리바이를 증명해야 된다면 <br>나는..", "type": "JP", "A": "<span class='upA'>  저는 절대 아니에요! </span>  <br>  <span class='underA'> 저는 그때 잤어요;; <br> 제 평소 일정표에도 <br> 자는 시간이라고 나와있다구요! </span>", "B": "<span class='upB'>  뭐했더라..  </span>  <br> <span class='underB'> 아! 송박게임했어요 <br> 친구랑 전화하면서! </span>" },
+                3: { "title": "Q4. 축제를 <a onclick=clickEvent();> 116퍼센트 </a> 즐긴 송이! <br> 오늘의 나를 기록하고자 일기장을 폈다. <br> 나의 일기장에는..", "type": "TF", "A": "<span class='upA'> 내가 뭘 했더라… </span>  <br>  <span class='underA'> 구체적으로 뭐가 재밌었고 <br> 어떤 부스가 좋았는지 써야지!</span> ", "B": " <span class='upB'>  그때 어땠더라… </span>  <br> <span class='underB'>  축제날의 조명.. 온도.. 습도.. <br> 분위기를 묘사한다! </span>" },
+                4: { "title": "Q5. 눈송마을 게시판에 공지된 <br> 축제 웹사이트를 확인해 보려는데, <br> 접속자가 너무 많은 나머지 <br> 사이트가 무한 로딩 중이다. <br> 이럴 때 나는.. ", "type": "JP", "A": "<span class='upA'> 지금 당장 들어가야겠어 </span>  <br>  <span class='underA'> 웹사이트가 이기나 내가 이기나<br> 해보자  </span>", "B": "<span class='upB'>  밤에는 사람 없겠지..  </span>  <br> <span class='underB'>  나중에 들어가자 </span>" },
+                5: { "title": "Q6. 시끌벅적한 눈송마을에 도착! <br> 2일 간의 눈송마을 생활을 위한 <br> 나만의 아지트를 고를 수 있다면? ", "type": "EI", "A": "<span class='upB'>  헉, 오자마자 기가 다 빨리는군 </span>  <br>  <span class='underB'> 일단 혼자 배부터 채운다 </span>", "B": "<span class='upA'> 우와! 주민들끼리 캠핑중이네! </span>  <br> <span class='underA'>  나도 껴서 새로운 이웃을 <br> 알아가야지!</span>" },
+                6: { "title": "Q7. 옆동네 꽃송마을 송이가 나를 붙잡으며 <br> 눈송마을 축제로 가는 길을 <br> 알려달라고 한다. <br> 하지만 나는 강의에 늦어서 <br>길을 알려주면 강의에 늦게된다. <br> 눈물을 글썽이는 송이를 보며 나는… ", "type": "TF", "A": "<span class='upA'>  강의가 더 중요해! 이번만 거짓말을.. </span>  <br>  <span class='underA'> 저 눈송마을 어딘지 몰라요 </span>", "B": "<span class='upB'>  눈물까지 흘리는데 무시할 수는 없지!  </span>  <br> <span class='underB'>  같이 가 드릴게요!</span>" },
+                7: { "title": "Q8. 눈송마을 축제를 하다니!! <br> 당장 핸드폰을 켜서 나는..", "type": "EI", "A": "<span class='upA'>  숙대로 헤쳐모여!  </span>  <br>  <span class='underA'> 단톡부터 갠톡까지 <br> 카톡을 쫙 돌린다 </span>", "B": "<span class='upB'> 부스는? 먹을거도 있나? </span>  <br> <span class='underB'> 언제 사람이 안 몰릴지 생각해서 <br> 그 시간대에 간다</span>" },
+                8: { "title": "Q9. 눈송마을에서 일어난 살인사건,<br> 내가 범인으로 지목되어<br> 긴급체포되었다면 나는..", "type": "TF", "A": "<span class='upA'>  일단 가긴 하지만! </span>  <br>  <span class='underA'> 변호사를 선임하기 전까지 <br> 한마디도 하지 않는다  </span>", "B": "	<span class='upB'> 절대 못 가 내가 왜? </span>  <br> <span class='underB'>  마을 사람들의 신임에 기대 <br> 절대 서에 갈 수 없다고 항의한다" },
+                9: { "title": "Q10. 눈송마을에서 열린 축제를 알차게 즐긴 후, <br> 시계를 보니 오후 10시가 훌쩍 넘긴 시간이었다. <br> 이후 나의 행선지는?", "type": "JP", "A": "<span class='upA'> 아~ 재밌었다  </span>  <br>  <span class='underA'> 집에 가서 씻고 자야지! <br> 배차간격 좀 볼까?  </span>", "B": "<span class='upB'> 이제부터 시작이야! </span>  <br> <span class='underB'>  더 놀사람은 <br> 순헌관 앞에서 만나자!</span>" },
+            }
+            function clickEvent(){
+                alert("찾았송!")
+            }
+            var result = {
+                "IPF": { "song": "한송이", 
+                        "img": "../img/한송이.png",
+                        "상세설명":"눈송마을에서 <u> 한송이 </u>는 <br> 혼자서도 눈송마을의 모든 것을 <br> 즐길 수 있는 주민이에요!<br>눈송마을 이곳 저곳을 <br> 바쁘게 돌아다니다가도<br> 언제든 자기만의 공간에서<br> 자기만의 시간을 보내야 <br>에너지 충전이 되는 성향이에요.<br> 또한, 여러 명의 송이들과<br> 얕은 이웃 관계를 형성하는 것보다<br> 소수의 깊이 있는 관계를 추구해요."
+                        ,"추천설명":"깊은 관계를 맺을 수 있는<br>친구를 찾고 싶다면 <br> <반상회> <br>에 참여하는 것을 <br>추천합니다! <br> 혼자서 여러 굿즈를 <br> 만들 수 있는 <br> <눈송공방><br>도 추천합니다!"
+                        ,"짝궁송이":"../img/얼음송이.png","반대송이":"../img/백만송이.png"
+                        ,"pt":"얼음송이","npt":"백만송이"},
+
+
+                "IJT": { "song": "계획송이", 
+                        "img": "../img/계획송이.png",
+                        "상세설명":"눈송마을에서 <u>계획송이</u>는 <br>철저한 계획을 세우며 <br>그 어떤 송이보다 눈송마을을 <br> 알차게 돌아다니는 주민이에요! <br> 송이님은 언제나 <br> 분명한 목적과 방향을 정하고 <br> 돌진하는 계획송이 유형이에요. <br> 눈송마을을 즐기기 위해 <br> 남들보다 철저하게 <br> 사전 계획을 세우곤 해요!<br> 눈송마을의 웹사이트를<br> 주기적으로 확인하는 것은 물론이고<br> 눈송마을 지도를 통해<br> 눈송마을의 프로그램들을 <br> 즐기기 위한 최적의 동선을 <br> 짤 수 있는 능력을 <br> 가지고 있기도 해요!"
+                        ,"추천설명":"계획적인 행동이 중요한<br> <현상수배>와 <br> <크라임송> <br>프로그램은 어떤가요? <br>또한, 원활한 계획을 <br> 짤 수 있도록 도와주는<br> 눈송마을 웹사이트를 통해<br> 진행되는 사전 이벤트에 <br>참여하는 것도 추천드려요! "
+                        ,"짝궁송이":"../img/미라클송이.png","반대송이":"../img/번개송이.png"
+                        ,"pt":"미라클송이","npt":"번개송이"},
+
+
+                "IPT": {"song": "얼음송이", 
+                     "img": "../img/얼음송이.png", 
+                     "상세설명":"눈송마을에서 <u>얼음송이</u>는<br> 냉철한 판단력을 가진 주민이에요! <br> 창의적이기보단 현실적입니다.<br> 체계적인 것이 제일 좋은 당신은 <br>얼음송이입니다! <br>날카롭고 이성적인 당신은<br> 어려움이 닥쳤을 때 <br>누구보다 이성적으로 행동하며<br> 해결책을 도모하여 <br>타인들로부터 <br> 든든함을 사는 송이입니다! <br>추리게임이나 퍼즐을 좋아하는 <br>얼음 송이!<br>눈송마을에 오게 되면.. <br>후회하지 않으실 거에요!"
+                    ,"추천설명":"얼음같이 냉철한 <br>판단력이 필요한 <br><크라임 송>과 <br> 실종된 송이를 찾는 <br> <눈송이 실종사건> <br>프로그램을 추천해요"
+                    ,"짝궁송이":"../img/한송이.png","반대송이":"../img/낭만송이.png"
+                    ,"pt":"한송이","npt":"낭만송이"},
+
+
+                "EJT": { "song": "미라클송이", 
+                    "img": "../img/미라클송이.png",
+                    "상세설명":"눈송마을에서 <u>미라클송이</u>는<br> 부지런한 아침을 <br> 추구하는 주민이에요!<br>밤보단 낮에 깨어있는 <br> 당신이야 말로 <br> 눈송마을의 새송이! <br> 새가 지저귈 때 일어나 <br> 쥐가 밤 말을 들을 때 자는 당신은<br> 미라클송이입니다.<br> <br> 분주하기도 하지만 <br>한편으로는 여유롭기도 한 아침을<br> 116퍼센트 만끽할 수 있는 <br> 송이입니다. <br> <br>카페에 가서<br> 브런치를 먹어도 좋지만<br> 이번만큼은 축제에 와서 <br> 푸드트럭을 즐겨보는 게 어때요?" 
+                    ,"추천설명":"낮에 할 수 있는 <br>다양한 체험형 부스를 <br> 추천해요! <br> 디폼블럭으로 <br> 나만의 굿즈를<br>만들 수 있는 <br> <눈송 공방> 또는 <br> 다른 미라클 송이들과 <br>함께 참가할 수 있는 <br><송이 오락관>에 참가하여 <br> 즐거움과 예쁜 굿즈를 <br>얻어가면 만족감이 두 배! " 
+                    ,"짝궁송이":"../img/계획송이.png","반대송이":"../img/야행송이.png"
+                    ,"pt":"계획송이","npt":"야행송이"},
+
+
+                "EPF": {  "song": "백만송이",
+                        "img": "../img/백만송이.png",
+                        "상세설명":"눈송마을에서 <u>백만송이</u>는<br> 모든 송이들을 이어줄 수 있는<br> 에너지 넘치는 주민이에요!<br>항상 밝은 에너지로 <br>혼자보다는 여럿이서 <br>마을을 돌아다니는 것을 선호하는<br> 백만송이 유형이에요. <br>늘 폭넓은 대인관계를 <br> 유지하려고 하는<br> 활동적이고 정열적인 성격으로<br> 주변 사람들에게 <br> 에너지를 주곤 해요. <br>붙임성이 좋아 <br>처음 본 이웃 송이들과도 <br>쉽게 친해질 수 있어요." 
+                        ,"추천설명":"새로운 사람들을 <br> 만날 수 있는 <br> <반상회> <br>에 참여해서 <br> 또 다른 관계를 <br> 맺는 것을 어떨까요? <br>또한, 넘쳐나는 에너지를 <br><장기자랑> <br>을 통해 뽐내는 것도 <br> 좋아요!" 
+                        ,"짝궁송이":"../img/번개송이.png","반대송이":"../img/한송이.png"
+                        ,"pt":"번개송이","npt":"한송이"},
+
+                "IJF": {  "song": "번개송이", 
+                        "img": "../img/번개송이.png",
+                        "상세설명":"눈송마을에서 <u>번개송이</u>는 <br>예측불가능한 주민이에요!<br> 호기심이 많고 기발하고<br> 즉흥적으로 무언가를 하는 것을 <br> 굉장히 좋아하는 번개송이는<br> 융통성있게 행동하여<br> 눈송마을을 즐기는 것을 <br> 타고난 송이에요!<br> 해야겠다고 마음먹은 <br> 프로그램뿐만 아니라<br> 지나가다 재밌어 보이는 <br> 프로그램에도 참여하여<br> 남들보다 알차게<br> 축제를 즐길 수 있어요.<br> 눈송이 실종사건을 해결하다가도<br> 맛있는 냄새에 이끌려<br> 푸드트럭으로 <br>발길을 돌리는 당신은<br> 진정한 번개송-!" 
+                        ,"추천설명":"즉흥적인 만남이 <br> 될 수 있는 <br> <반상회> 프로그램에 <br> 참여하는 것은 어떨까요? <br> 계획성보단 <br> 즉흥성이 필요한 <br> <눈송이 실종사건> <br>프로그램도 추천해요!"
+                        ,"짝궁송이":"../img/백만송이.png","반대송이":"../img/계획송이.png"
+                        ,"pt":"백만송이","npt":"계획송이"},
+                
+
+                "EJF": {"song": "낭만송이", 
+                        "img": "../img/낭만송이.png",
+                        "상세설명":"눈송마을에서 <u>낭만송이</u>는<br> 이웃을 따듯하게 만들어주는<br> 주민이에요!<br> 연극, 춤 미술 등 <br>예술활동에 관심이 많으며<br> 친근하고 따듯한 편인 당신!<br> <br> 때로는 수줍어하기도, <br>외로워하기도 하지만<br> 지나가는 낙엽만 봐도<br> 다시 웃을 수 있는 당신은<br> 낭만송이입니다. <br> <br>작은 것에도 남과 다른<br> 특별한 의미를 찾아내는 당신을<br> 눈송마을로 초대합니다! " 
+                       ,"추천설명":"낭만적인 사람과 <br> 함께할 수 있는 <br><토크 콘서트> <br>를 추천합니다! <br>공연하면 낭만 <br> 낭만하면 공연! <br> <br> 공연장에서 진행하는 <br>다양한 프로그램을 <br>즐기는 것도 <br> 추천해요!" 
+                        ,"짝궁송이":"../img/야행송이.png","반대송이":"../img/얼음송이.png"
+                        ,"pt":"야행송이","npt":"얼음송이"}, 
+
+
+                "EPT": {"song":"야행송이", 
+                        "img": "../img/야행송이.png",
+                        "상세설명":"눈송마을에서 <u>야행송이</u>는 <br>어둠을 밝히는 주민이에요!<br> 낮보단 밤에 깨어있는<br> 올빼미 같은 당신!<br> 밤의 야경과 불빛의 아름다움을<br> 만끽할 수 있는 당신은<br>야행송이입니다!<br> 센치함과 고요함이 존재하지만<br>어쩔때는 화려한 불빛과<br>사람들 제 각각의 <br> 목소리가 어우러져 <br> 복잡함을 자아내기도 하는 <br>밤에 깨어있는 송이입니다. <br>밤의 축제에 참가하여 <br>야경의 일부가 되어보는 것은 <br> 어떨까요?" 
+                        ,"추천설명":"밤에는 공연 공연은 밤! <br>밤에 즐겨야 <Br> 센치함이 두배되는 <br>공연장에 놀러오세요! <br>다양한 먹거리가 존재하는 <br>먹거리부스도 <br> 즐겨보는 것을 추천해요!"
+                        ,"짝궁송이":"../img/낭만송이.png","반대송이":"../img/미라클송이.png"
+                        ,"pt":"낭만송이","npt":"미라클송이"},
+            }
+
+
+            function start() {
+                $(".start").hide();
+                $(".question").show();
+            }
+            $("#A").click(function () {
+                var type = $("#type").val();
+                var preValue = $("#" + type).val();
+                $("#" + type).val(parseInt(preValue) + 1);
+                next();
+            });
+            $("#B").click(function () {
+                next();
+            });
+            function next() {
+                if (num == 10) {
+                    $(".question").hide();
+                    setTimeout(function(){
+                        $(".loading").show()
+                    },250);
+                     setTimeout(function(){
+                        $(".loading").toggle()
+                    },5000);
+                    setTimeout(function(){
+                        $(".result").show()
+                    },5100);
+            
+
+
+                    var mbti = "";
+                    ($("#EI").val() < 2) ? mbti += "I" : mbti += "E";
+                    ($("#JP").val() < 2) ? mbti += "P" : mbti += "J";
+                    ($("#TF").val() < 2) ? mbti += "F" : mbti += "T";
+
+                    $("#img").attr("src", result[mbti]["img"]);
+                    $("#song").html( result[mbti]["song"]);
+                    $("#상세설명").html( result[mbti]["상세설명"]);
+                    $("#추천설명").html( result[mbti]["추천설명"]);
+                    $("#짝궁송이").attr("src", result[mbti]["짝궁송이"]);
+                    $("#반대송이").attr("src", result[mbti]["반대송이"]);
+                    $("#pt").html( result[mbti]["pt"]);
+                    $("#npt").html( result[mbti]["npt"]);
+
+
+
+                } else {
+                    $(".progress-bar").attr('style', 'width: calc(100/9*' + num + '%)');
+                    $("#title").html(q[num]["title"]);
+                    $("#type").val(q[num]["type"]);
+                    $("#A").html(q[num]["A"]);
+                    $("#B").html(q[num]["B"]);
+                    num++;
+
+                    
+
+                }
+
+            }
+
+        </script>
+        <script src="../js/start.js" charset="utf-8"></script>
+        <script src="../js/share.js" charset="utf-8"></script>
+        <script type="text/javascript"></script>
+    
+    </div>
+    
+</body>
+</html>
